@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #EEEEEE;
+}
+
+header{
+    background-color: #00ADB5;
+    text-align: center;
+}
+
+.title{
+    color: #222831;
+}
+
+.text{
+    color: #393E46;
+    font-size: larger
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+main{
+    margin-top: 3rem;
+    width: 50%;
+    background-color: #00acb526;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.main-child{
+    padding: 0.5rem;
+}
+
+.add{
+    width: 50%;
+    background-color: #00acb567;
+    border-radius: 0 0 1rem 1rem;
+}
