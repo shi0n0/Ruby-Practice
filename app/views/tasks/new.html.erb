@@ -7,18 +7,23 @@
   <title>新規追加</title>
 </head>
 <body>
+<header>
+  <h1 class="title">タスク一覧</h1>
+</header>
 <div class="container">
-    <header>
-      <h1 class="title">タスク一覧</h1>
-    </header>
-
-    <h2>新規タスク</h2>
-  <%= form_for(@task) do |f| %>
-    <div><%= f.label :title %></div>
-    <div><%= f.text_field :title %></div>
-    <div><%= f.submit %></div>
-  <% end %>
+  <main>
+      <h2>新規タスク</h2>
+    <%= form_for(@task) do |f| %>
+      <div><%= f.label :title %></div>
+      <div><%= f.text_field :title %></div>
+      <div><%= f.submit %></div>
+    <% end %>
+  </main>
+</div>
+<div class="container">
+  <div class="add">
   <%= link_to '戻る', tasks_path %>
+  </div>
 </div>
 </body>
 </html>
