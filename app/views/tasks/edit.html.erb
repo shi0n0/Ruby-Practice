@@ -11,14 +11,22 @@
 <header>
   <h1 class="title">タスク一覧</h1>
 </header>
+
 <div class="container">
-    <h1>タスク編集</h1>
-  <%= form_for(@task) do |f| %>
-    <div><%= f.label :title %></div>
-    <div><%= f.text_field :title %></div>
-    <div><%= f.submit %></div>
-  <% end %>
-  <%= link_to '戻る', tasks_path %>
+  <main>
+      <h2>タスク編集</h2>
+    <%= form_for(@task) do |f| %>
+      <div><%= f.label :title %></div>
+      <div><%= f.text_field :title %></div>
+      <div><%= f.submit %></div>
+    <% end %>
+  </main>
+</div>
+
+<div class="container">
+  <div class="add">
+    <%= link_to '戻る', tasks_path %>
+  </div>
 </div>
 </body>
 </html>
